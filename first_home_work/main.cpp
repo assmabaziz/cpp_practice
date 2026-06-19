@@ -9,7 +9,7 @@ int main()
     const string lastName = "Baziz";
     const string cityName = "Saint Petersburg";
     const string countryName = "Russia";
-    const int monthlySlary = 2500;
+    const short int monthlySlary = 2500;
     const string gender = "Female";
     const bool isMarried = false;
 
@@ -26,9 +26,9 @@ int main()
 
     //============================================ Second task ========================================
 
-    const int firstVar = 20 ;
-    const int secondVar =  30 ;
-    const int thirdVar = 10 ;
+    const short int firstVar = 20 ;
+    const short int secondVar =  30 ;
+    const short int thirdVar = 10 ;
 
     cout << firstVar << "+ \n" ;
     cout << secondVar << "+ \n" ;
@@ -38,7 +38,7 @@ int main()
 
     //============================================ Third task ========================================
 
-    const int age = 25;
+    const short int age = 25;
 
     cout << "After " << 30 - age << " years you'll be " <<  age + 5 << " years old";
 

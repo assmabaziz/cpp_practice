@@ -10,7 +10,7 @@ int main()
      string lastName ;
      string cityName ;
      string countryName ;
-     int monthlySlary ;
+     short int monthlySlary ;
      string gender ;
      bool isMarried ;
 
@@ -53,9 +53,9 @@ int main()
     //============================================ Second task ========================================
 
 
-     int firstVar ;
-     int secondVar ;
-     int thirdVar ;
+     short int firstVar ;
+     short int secondVar ;
+     short int thirdVar ;
 
 
 
@@ -82,7 +82,7 @@ int main()
 
 
 
-     int age ;
+     short int age ;
 
      cout << "Enter your age: \n" ;
      cin >> age ;
