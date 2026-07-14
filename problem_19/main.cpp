@@ -11,7 +11,7 @@ int main()
 
     cout << "Enter the radius: \n";
     cin >> radius ;
-    area = pow(radius, 2) * Pi ;
+    area = (pow(radius, 2) * Pi) / 4 ;
     cout << "Area equals to: " << area << endl ;
     cout << "Ceil of area: " << ceil(area) ;
 

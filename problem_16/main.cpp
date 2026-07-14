@@ -17,7 +17,5 @@ int main()
     area = width * sqrt(pow(diameter,2) - pow(width , 2)) ;
     cout << area ;
 
-
-
     return 0;
 }
