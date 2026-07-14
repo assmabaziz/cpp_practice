@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ int main()
     cin >> diameter ;
     area = (diameter * diameter) / ( Pi * 4 ) ;
     cout << "The circle area equals to: " << area  << endl ;
+    cout << "The floor of area equals to: " << floor(area) ;
 
     return 0;
 }
