@@ -15,6 +15,7 @@ int main()
     cin >> powerNumber ;
     result = pow(baseNumber , powerNumber) ;
     cout << "The number: " << baseNumber << " to power: " << powerNumber << " equals to: " << result << endl ;
+    cout << "The round of area equals to: " << round(result) ;
 
     return 0;
 }
