@@ -2,6 +2,9 @@
 
 using namespace std;
 
+enum enGendor {male , female};
+enum enColor {Red, Green, Yellow};
+enum enMartialStatus {Married, Single};
 
 struct stAdress
  {
@@ -18,11 +21,18 @@ struct stAdress
      string PhoneNumber ;
      stAdress Adress ;
  };
+ struct stAdditionalInfo
+ {
+     enGendor Gendor ;
+     enMartialStatus MartialStatus ;
+     enColor FavoriteColor ;
+      };
 
  struct stPerson
  {
      string FirstName ;
      string LastName ;
+     stAdditionalInfo AdditionalInfo;
      stContactInfo ContactInfo ;
  };
 
@@ -38,8 +48,10 @@ int main()
     Person1.ContactInfo.PhoneNumber = "+79779197013";
     Person1.ContactInfo.Adress.SrteetName  = "Udarnikov";
     Person1.ContactInfo.Adress.BuildingNo = "27K1";
+    Person1.AdditionalInfo.FavoriteColor = enColor::Green ;
 
     cout << Person1.ContactInfo.Adress.SrteetName ;
+    cout << "Favorite color:  " << Person1.AdditionalInfo.FavoriteColor;
 
 
     return 0;
