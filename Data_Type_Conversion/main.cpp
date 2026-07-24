@@ -29,18 +29,5 @@ int main()
     cout << "Explicit conversion type C to integer: " << ExpFloatToIntCStyle << "\n" ;
     cout << "Explicit conversion to integer using function: " << ExpFloatToIntFunc << endl ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
