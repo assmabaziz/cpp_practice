@@ -33,7 +33,7 @@ struct stDoctorInfo
     string FullName ;
     string Email ;
     string PhoneNumber ;
-    stDoctorAdress DoctorAdress ;
+    stDoctorAdress DoctorAdress;
 };
 
 struct stGeneralInfo
