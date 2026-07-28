@@ -3,15 +3,22 @@
 
 using namespace std;
 
-int main()
+float funcCalcArea(unsigned short firstDimension , unsigned short secondDimension , unsigned short thirdDimension)
 {
     const float Pi = 3.14 ;
-    short firstDimension ;
-    short secondDimension ;
-    short thirdDimension ;
     float perimeter;
     float productDimensions ;
-    float area ;
+    perimeter = (firstDimension + secondDimension + thirdDimension) / 2.0 ;
+    productDimensions = (firstDimension * secondDimension * thirdDimension) / (4 * sqrt(perimeter * (perimeter - firstDimension) * (perimeter - secondDimension) * (perimeter - thirdDimension)) ) ;
+    return Pi * productDimensions ;
+}
+
+int main()
+{
+    unsigned short firstDimension ;
+    unsigned short secondDimension ;
+    unsigned short thirdDimension ;
+    float Area ;
 
     cout << "Enter the first dimension: \n" ;
     cin >> firstDimension ;
@@ -20,12 +27,9 @@ int main()
     cout << "Enter the third dimension: \n" ;
     cin >> thirdDimension ;
 
-    perimeter = (firstDimension + secondDimension + thirdDimension) / 2.0 ;
-    productDimensions = (firstDimension * secondDimension * thirdDimension) / (4 * sqrt(perimeter * (perimeter - firstDimension) * (perimeter - secondDimension) * (perimeter - thirdDimension)) ) ;
-    productDimensions = pow(productDimensions , 2);
-    area = Pi * productDimensions ;
-    cout << "Area equals to: " << area << endl ;
-    cout << "The round of area equals to: " << round(area) ;
+    Area = funcCalcArea(firstDimension, secondDimension, thirdDimension) ;
+    cout << "Area equals to: " << Area << endl ;
+    cout << "The round of area equals to: " << round(Area) ;
 
     return 0;
 }
