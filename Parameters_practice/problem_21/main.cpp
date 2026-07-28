@@ -3,17 +3,22 @@
 
 using namespace std;
 
+float funcCalcArea(unsigned short diameter)
+{
+   const float Pi = 3.14 ;
+   return  pow(diameter , 2 ) / ( Pi * 4 ) ;
+}
+
 int main()
 {
-    const float Pi = 3.14 ;
-    short int diameter ;
-    float area ;
+    unsigned short diameter ;
+    float Area ;
 
     cout << "Enter the diameter: \n";
     cin >> diameter ;
-    area = (diameter * diameter) / ( Pi * 4 ) ;
-    cout << "The circle area equals to: " << area  << endl ;
-    cout << "The floor of area equals to: " << floor(area) ;
+    Area = funcCalcArea(diameter) ;
+    cout << "The circle area equals to: " << Area  << endl ;
+    cout << "The floor of area equals to: " << floor(Area) ;
 
     return 0;
 }
