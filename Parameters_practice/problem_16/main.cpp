@@ -3,19 +3,26 @@
 
 using namespace std;
 
+float funcCalcArea(int width , int diameter)
+{
+    return width * sqrt(pow(diameter,2) - pow(width , 2)) ;
+
+}
+
+
 int main()
 {
 
-    unsigned short int width ;
-    unsigned short int diameter ;
-    float area ;
+    int width ;
+    int diameter ;
+    float Area ;
 
-    cout << "Enter the height:  \n" ;
+    cout << "Enter the width:  \n" ;
     cin >> width ;
     cout << "Enter the diameter: \n" ;
     cin >> diameter ;
-    area = width * sqrt(pow(diameter,2) - pow(width , 2)) ;
-    cout << area ;
+    Area = funcCalcArea(width , diameter) ;
+    cout << Area ;
 
     return 0;
 }
