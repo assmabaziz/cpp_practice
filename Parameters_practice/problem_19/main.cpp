@@ -10,8 +10,6 @@ float funcCalcArea(int radius)
 
 }
 
-
-
 int main()
 {
     int radius ;
