@@ -3,17 +3,24 @@
 
 using namespace std;
 
+float funcCalcArea(int radius)
+{
+    const float Pi = 3.14 ;
+
+    return pow(radius, 2) * Pi ;
+}
+
 int main()
 {
-    unsigned short int radius ;
-    const float Pi = 3.14 ;
-    float area ;
+    int radius ;
+    float Area ;
 
     cout << "Enter the radius: \n";
     cin >> radius ;
-    area = pow(radius, 2) * Pi ;
-    cout << "Area equals to: " << area << endl ;
-    cout << "Ceil of area: " << ceil(area) ;
+    Area = funcCalcArea(radius);
+    cout << "Area equals to: " << Area << endl ;
+    cout << "Ceil of area: " << ceil(Area) << endl;
+    cout << "Ceil of area: " << ceil(funcCalcArea(radius)) ;
 
     return 0;
 }
