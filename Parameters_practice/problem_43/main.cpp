@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int main()
+void procedureCalcTime()
 {
-    unsigned int totalSeconds ;
+   unsigned int totalSeconds ;
     short int totalDays ;
     short int totalHours ;
     short int totalMinutes ;
@@ -24,6 +24,11 @@ int main()
     remainder = remainder % secondsPerMunites ;
     totalSeconds = remainder ;
     cout << "Days: " << totalDays << endl << "Hours: " << totalHours << endl << "Minutes: " << totalMinutes << endl << "Seconds: " << totalSeconds << endl ;
+}
 
+int main()
+{
+
+    procedureCalcTime () ;
     return 0;
 }
