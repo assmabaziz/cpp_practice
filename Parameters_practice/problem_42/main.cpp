@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+void procedureCalTotalTime()
 {
     short int totalDays ;
     short int totalHours ;
@@ -21,6 +21,11 @@ int main()
 
     totalTime = totalSeconds + (totalMinutes * 60) + (totalHours * 3600) + (totalDays * 86400);
     cout << totalTime ;
+}
 
+int main()
+{
+
+    procedureCalTotalTime() ;
     return 0;
 }
