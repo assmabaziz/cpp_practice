@@ -1,22 +1,29 @@
 #include <iostream>
 
 using namespace std;
-
+void procedureSwapNum(int Num1 , int Num2 )
+{
+    int TempVar ;
+    cout << "The first number before swap: " << Num1  << "\n" ;
+    cout << "The second number before swap: " << Num2 << "\n" ;
+    TempVar = Num1 ;
+    Num1 = Num2 ;
+    Num2 = TempVar ;
+    cout << "The first number after swap: " << Num1  << "\n" ;
+    cout << "The second number after swap: " << Num2 << "\n" ;
+}
 int main()
 {
-    short int firstNumber;
-    short int secondNumber;
 
+    int FirstNumber ;
+    int SecondNumber;
 
     cout << "Enter the first number: \n" ;
-    cin >> firstNumber;
+    cin >> FirstNumber;
     cout << "Enter the second number: \n" ;
-    cin >> secondNumber;
-    cout << firstNumber << endl;
-    cout << secondNumber << endl;
-    cout << secondNumber << endl;
-    cout << firstNumber << endl;
+    cin >> SecondNumber;
 
+    procedureSwapNum(FirstNumber , SecondNumber);
 
     return 0;
 }
