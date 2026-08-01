@@ -11,6 +11,8 @@ void procedureSwapNum(int Num1 , int Num2 )
     Num2 = TempVar ;
     cout << "The first number after swap: " << Num1  << "\n" ;
     cout << "The second number after swap: " << Num2 << "\n" ;
+    cout << "The ref of first param: " << &Num1 << "\n" ;
+    cout << "The ref of second param: " << &Num2 << "\n" ;
 }
 int main()
 {
@@ -24,6 +26,8 @@ int main()
     cin >> SecondNumber;
 
     procedureSwapNum(FirstNumber , SecondNumber);
+    cout << "The ref of first number: " << &FirstNumber << "\n" ;
+    cout << "The ref of second number: " << &SecondNumber << "\n" ;
 
     return 0;
 }
