@@ -14,10 +14,11 @@ void procedureReadValues (int UserArray[3])
 
 }
 
-void procedureCalculateAverage(int UserArray[3])
+float procedureCalculateAverage(int UserArray[3])
 {
     float AverageValues = ( UserArray[0] + UserArray[1] + UserArray[2] ) / 3.0 ;
-    cout << "The average of those values: " << AverageValues ;
+
+    return AverageValues ;
 }
 
 int main()
@@ -25,6 +26,6 @@ int main()
     int UserArray[3] ;
 
     procedureReadValues(UserArray) ;
-    procedureCalculateAverage(UserArray) ;
+    cout << "The average of those values: " << procedureCalculateAverage(UserArray) ;
     return 0;
 }
