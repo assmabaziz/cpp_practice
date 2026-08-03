@@ -16,9 +16,8 @@ void procedureReadValues (int UserArray[3])
 
 float procedureCalculateAverage(int UserArray[3])
 {
-    float AverageValues = ( UserArray[0] + UserArray[1] + UserArray[2] ) / 3.0 ;
 
-    return AverageValues ;
+    return ( UserArray[0] + UserArray[1] + UserArray[2] ) / 3.0 ;
 }
 
 int main()
