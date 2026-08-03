@@ -2,10 +2,9 @@
 
 using namespace std;
 
-void procedureReadValues ()
+void procedureReadValues (int UserArray[3])
 {
-    int UserArray[3] ;
-    float AverageGrades ;
+
     cout << "The first grade: " << "\n" ;
     cin >> UserArray[0] ;
     cout << "The second grade: " << "\n" ;
@@ -13,14 +12,19 @@ void procedureReadValues ()
     cout << "The third grade: " << "\n" ;
     cin >> UserArray[2] ;
 
-    AverageGrades = (UserArray[0] + UserArray[1] + UserArray[2]) / 3.0 ;
-    cout << "The average of those grades equals to: " << AverageGrades ;
-
 }
 
+void procedureCalculateAverage(int UserArray[3])
+{
+    float AverageValues = ( UserArray[0] + UserArray[1] + UserArray[2] ) / 3.0 ;
+    cout << "The average of those values: " << AverageValues ;
+}
 
 int main()
 {
-    procedureReadValues() ;
+    int UserArray[3] ;
+
+    procedureReadValues(UserArray) ;
+    procedureCalculateAverage(UserArray) ;
     return 0;
 }
