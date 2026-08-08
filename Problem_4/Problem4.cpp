@@ -1,23 +1,62 @@
 #include <iostream>
+
 using namespace std;
 
-int main()
-{
-    short Age;
-    bool HasDriveLiscence;
+int Age;
 
+void readAge(int & Age)
+{
     cout << "Enter your age: \n";
-    cin >> Age;
-    cout << "Do you have drve liscence? \n";
-    cin >> HasDriveLiscence;
-    if (Age > 18 && HasDriveLiscence == true)
+    cin >> Age;  
+}
+
+bool checkAge(int Age)
+{
+    if (Age > 18)
     {
-        cout << "Acepted";
+        return true;
     }
     else
     {
-
-        cout << "Refused"; 
+        return false;
     }
+}
+
+bool checkDriveLiscence()
+{
+    bool Result;
+    cout << "Do you have drive liscence? \n";
+    cin >> Result;
+    if (Result == true)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    int Age;
+    bool resultCheckAge;
+    bool resultCheckDLiscence;
+
+    readAge(Age);
+    resultCheckAge = checkAge(Age);
+    resultCheckDLiscence = checkDriveLiscence();
+
+    if (resultCheckAge == true && resultCheckDLiscence == true)
+    {
+        cout << "Accepted";
+    }
+    else
+    {
+        cout << "Refused";
+    }
+
+    return 0;
+    
 }
 
