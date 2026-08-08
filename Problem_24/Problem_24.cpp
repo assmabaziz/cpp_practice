@@ -2,12 +2,15 @@
 
 using namespace std;
 
-int main()
+short Age;
+
+void readAge(short& Age)
 {
-  
-	short Age;
 	cout << "Enter your age: \n";
 	cin >> Age;
+}
+void checkAge(short Age)
+{
 	if (Age >= 18 && Age < 45)
 	{
 		cout << "Valid age";
@@ -16,6 +19,13 @@ int main()
 	{
 		cout << "Unvalid age";
 	}
+}
+
+int main()
+{
+	short Age;
+	readAge(Age);
+	checkAge(Age);
 
    return 0;
 }
