@@ -1,0 +1,6 @@
+﻿  Problem_34.cpp
+D:\programming_by_mySelf\Basics_programming\cpp\cpp_practice\Problem_34\Problem_34.cpp(18,22): warning C4305: '=': truncation from 'double' to 'float'
+D:\programming_by_mySelf\Basics_programming\cpp\cpp_practice\Problem_34\Problem_34.cpp(22,22): warning C4305: '=': truncation from 'double' to 'float'
+D:\programming_by_mySelf\Basics_programming\cpp\cpp_practice\Problem_34\Problem_34.cpp(26,22): warning C4305: '=': truncation from 'double' to 'float'
+D:\programming_by_mySelf\Basics_programming\cpp\cpp_practice\Problem_34\Problem_34.cpp(30,22): warning C4305: '=': truncation from 'double' to 'float'
+  Problem_34.vcxproj -> D:\programming_by_mySelf\Basics_programming\cpp\cpp_practice\Problem_34\x64\Debug\Problem_34.exe

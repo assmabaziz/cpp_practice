@@ -1,15 +1,17 @@
 
 #include <iostream>
 using namespace std;
-short Grade;
-void readGrade(short &Grade)
-{
-    
+
+short readGrade()
+{ 
+    short Grade;
     cout << "Enter your grade:  \n";
     cin >> Grade;
+    return Grade;
 }
 void definedGrade(short Grade)
 {
+    
     if (Grade >= 90)
     {
         cout << "Grade A";
@@ -37,9 +39,8 @@ void definedGrade(short Grade)
 }
 int main()
 {
-    short Grade;
-    readGrade(Grade);
-    definedGrade(Grade);
+   
+    definedGrade(readGrade());
     return 0;
 }
 
