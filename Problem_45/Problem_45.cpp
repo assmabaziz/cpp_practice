@@ -12,55 +12,58 @@ short readMonthNumber()
 string identifyMonth(short  MonthNumber)
 {
     string Month;
-
     if (MonthNumber >= 1 && MonthNumber <= 12)
     {
-        if (MonthNumber == 1) {
+        switch (MonthNumber)
+        {
+        case 1 :
             Month = "January";
-        }
-        else if (MonthNumber == 2)
-        {
+            break;
+
+        case 2 : 
             Month = "February";
-        }
-        else if (MonthNumber == 3)
-        {
+            break;
+        
+        case 3 :
             Month = "March";
-        }
-        else if (MonthNumber == 4)
-        {
+            break;
+
+        case 4 :
             Month = "April";
-        }
-        else if (MonthNumber == 5)
-        {
+            break;
+
+        case 5 :
             Month = "May";
-        }
-        else if (MonthNumber == 6)
-        {
+            break;
+
+        case 6 :
             Month = "June";
-        }
-        else if (MonthNumber == 7)
-        {
+            break;
+
+        case 7 :
             Month = "July";
-        }
-        else if (MonthNumber == 8)
-        {
+            break;
+
+        case 8 :
             Month = "August";
-        }
-        else if (MonthNumber == 9)
-        {
+            break;
+
+        case 9 :
             Month = "September";
-        }
-        else if (MonthNumber == 10)
-        {
+            break;
+
+        case 10 :
             Month = "October";
-        }
-        else if (MonthNumber == 11)
-        {
+            break;
+
+        case 11 :
             Month = "November";
-        }
-        else if (MonthNumber == 12)
-        {
+            break;
+
+        case 12 :
+
             Month = "December";
+            break;
         }
     }
     else
