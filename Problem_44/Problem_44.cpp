@@ -16,32 +16,35 @@ string identifyWeekDay(short  DayNumber)
 
     if (DayNumber >= 1 && DayNumber <= 7 )
     {
-        if (DayNumber == 1) {
+        switch (DayNumber)
+        {
+        case 1:
             WeekDay = "Saturday";
-        }
-        else if (DayNumber == 2)
-        {
+            break;
+
+        case 2:
             WeekDay = "Sunday";
-        }
-        else if (DayNumber == 3)
-        {
+            break;
+
+        case 3:
             WeekDay = "Monday";
-        }
-        else if (DayNumber == 4)
-        {
+            break;
+
+        case 4:
             WeekDay = "Tuesday";
-        }
-        else if (DayNumber == 5)
-        {
+            break;
+
+        case 5:
             WeekDay = "Wednesday";
-        }
-        else if (DayNumber == 6)
-        {
+            break;
+
+        case 6:
             WeekDay = "Thursday";
-        }
-        else if(DayNumber == 7)
-        {
+            break;
+
+        case 7:
             WeekDay = "Friday";
+            break;
         }
     }
     else

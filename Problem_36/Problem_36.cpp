@@ -6,7 +6,7 @@ struct strInfoOperation
 {
     int FirstNumber;
     int secondNumber;
-    string OperatioType;
+    char OperationType;
 };
 void readInfoOperation(strInfoOperation &InfoOperartion)
 {
@@ -15,37 +15,37 @@ void readInfoOperation(strInfoOperation &InfoOperartion)
     cout << "Enter the second number: \n";
     cin >> InfoOperartion.secondNumber;
     cout << "Enter the operation type (+ - * /) :\n";
-    cin >> InfoOperartion.OperatioType;
+    cin >> InfoOperartion.OperationType;
 }
 float excuteOperation(strInfoOperation InfoOperartion) {
     float Result;
 
-    if (InfoOperartion.secondNumber == 0 && InfoOperartion.OperatioType == "/")
+    if (InfoOperartion.secondNumber == 0 && InfoOperartion.OperationType == '/' )
     {
         cout << "Can't devide by 0";
     }
     else
     {
-        if (InfoOperartion.OperatioType == "+")
+        switch (InfoOperartion.OperationType)
         {
-            Result = InfoOperartion.FirstNumber + InfoOperartion.secondNumber;
+            case '+' :
+                Result = InfoOperartion.FirstNumber + InfoOperartion.secondNumber;
+                break;
+
+            case '-':
+                Result = InfoOperartion.FirstNumber - InfoOperartion.secondNumber;
+                break;
+
+            case '*':
+                Result = InfoOperartion.FirstNumber * InfoOperartion.secondNumber;
+                break;
+
+            case '/':
+                Result = InfoOperartion.FirstNumber / InfoOperartion.secondNumber;
+                break;
+            default:
+                cout << "Choose a valid operation";
         }
-        else if (InfoOperartion.OperatioType == "-") 
-        {
-            Result = InfoOperartion.FirstNumber - InfoOperartion.secondNumber;
-        }
-        else if (InfoOperartion.OperatioType == "*")
-        {
-            Result = InfoOperartion.FirstNumber * InfoOperartion.secondNumber;
-        }
-        else if (InfoOperartion.OperatioType == "/")
-        {
-            Result = InfoOperartion.FirstNumber / InfoOperartion.secondNumber;
-        }
-        else
-        {
-            cout << "Please enter a valid operation \n";
-        } 
     }
     return Result;
 }
@@ -57,5 +57,5 @@ int main()
 
     readInfoOperation(InfoOperartion);
     Result = excuteOperation(InfoOperartion);
-    cout << InfoOperartion.FirstNumber << " " << InfoOperartion.OperatioType << " " << InfoOperartion.secondNumber << " = " << Result;
+    cout << InfoOperartion.FirstNumber << " " << InfoOperartion.OperationType << " " << InfoOperartion.secondNumber << " = " << Result;
 }
