@@ -2,77 +2,94 @@
 
 using namespace std;
 
-short readMonthNumber()
+enum enYearMonth {Jan = 1, Feb = 2, Mar = 3, Apr = 4, May = 5, Jun = 6, Jul = 7, Aug = 8, Sep = 9, Oct = 10, Nov = 11, Dec = 12};
+
+void readMonthNumber()
 {
-    short  MonthNumber;
-    cout << "Please enter the day number \n";
-    cin >> MonthNumber;
-    return MonthNumber;
+    cout << "Please choose the day number from the list: \n";
+    cout << "*****************************************\n";
+    cout << "                List                     \n";
+    cout << "*****************************************\n";
+    cout << "1: January\n";
+    cout << "2: February\n";
+    cout << "3: March\n";
+    cout << "4: April\n";
+    cout << "5: May\n";
+    cout << "6: June\n";
+    cout << "7: July\n";
+    cout << "8: August\n";
+    cout << "9: September\n";
+    cout << "10: October\n";
+    cout << "11: November\n";
+    cout << "12: December\n";
 }
-string identifyMonth(short  MonthNumber)
+
+enYearMonth GetMonthNumber()
 {
-    string Month;
-    if (MonthNumber >= 1 && MonthNumber <= 12)
-    {
+    short  UserNumber;
+    cin >> UserNumber;
+    return (enYearMonth) UserNumber;
+}
+
+string GetMonthName(enYearMonth  MonthNumber)
+{
+    
         switch (MonthNumber)
         {
-        case 1 :
-            Month = "January";
+        case enYearMonth::Jan:
+            return "January";
             break;
 
-        case 2 : 
-            Month = "February";
+        case enYearMonth::Feb:
+            return "February";
             break;
         
-        case 3 :
-            Month = "March";
+        case enYearMonth::Mar:
+            return "March";
             break;
 
-        case 4 :
-            Month = "April";
+        case enYearMonth::Apr:
+            return "April";
             break;
 
-        case 5 :
-            Month = "May";
+        case enYearMonth::May:
+            return "May";
             break;
 
-        case 6 :
-            Month = "June";
+        case enYearMonth::Jun:
+            return "June";
             break;
 
-        case 7 :
-            Month = "July";
+        case enYearMonth::Jul:
+            return "July";
             break;
 
-        case 8 :
-            Month = "August";
+        case enYearMonth::Aug:
+            return "August";
             break;
 
-        case 9 :
-            Month = "September";
+        case enYearMonth::Sep:
+            return "September";
             break;
 
-        case 10 :
-            Month = "October";
+        case enYearMonth::Oct:
+            return "October";
             break;
 
-        case 11 :
-            Month = "November";
+        case enYearMonth::Nov:
+            return "November";
             break;
 
-        case 12 :
-
-            Month = "December";
+        case enYearMonth::Dec:
+            return "December";
             break;
+        default :
+            return "Please enter a valid number from 1 to 12";
         }
-    }
-    else
-    {
-        cout << "Please enter a valid number";
-    }
-    return Month;
 }
+
 int main()
 {
-    cout << identifyMonth(readMonthNumber());
+    readMonthNumber();
+    cout << GetMonthName(GetMonthNumber());
 }
