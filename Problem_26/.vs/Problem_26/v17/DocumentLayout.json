@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Problem_26\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{038D4E0F-2A3B-46D0-9D6A-50FB9432A365}|Problem_26.vcxproj|D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Problem_26\\Problem_26.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{038D4E0F-2A3B-46D0-9D6A-50FB9432A365}|Problem_26.vcxproj|solutionrelative:Problem_26.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Problem_26.cpp",
+              "DocumentMoniker": "D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Problem_26\\Problem_26.cpp",
+              "RelativeDocumentMoniker": "Problem_26.cpp",
+              "ToolTip": "D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Problem_26\\Problem_26.cpp",
+              "RelativeToolTip": "Problem_26.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-20T16:56:17.203Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

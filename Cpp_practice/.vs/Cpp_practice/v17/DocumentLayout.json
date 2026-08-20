@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Cpp_practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EDB8BAC-E1F6-45AF-AFA8-F6C7AB8B7E58}|Cpp_practice.vcxproj|D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Cpp_practice\\Cpp_practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9EDB8BAC-E1F6-45AF-AFA8-F6C7AB8B7E58}|Cpp_practice.vcxproj|solutionrelative:Cpp_practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cpp_practice.cpp",
+              "DocumentMoniker": "D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Cpp_practice\\Cpp_practice.cpp",
+              "RelativeDocumentMoniker": "Cpp_practice.cpp",
+              "ToolTip": "D:\\programming_by_mySelf\\Basics_programming\\cpp\\cpp_practice\\Cpp_practice\\Cpp_practice.cpp",
+              "RelativeToolTip": "Cpp_practice.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-19T18:14:43.951Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
