@@ -8,18 +8,20 @@ short ReadCounter()
     cin >> Counter;
     return Counter;
 }
-void PrintOddNumbers(short Counter)
+short PrintOddNumbers(short Counter)
 {
+    short Sum = 0;
     for (short i = 0; i <= Counter ; i ++)
     {
         if (i % 2 == 1)
         {
-            cout << i << endl;
+            Sum = Sum + i;
         }
     }
+     return Sum;
 }
 
 int main()
 {
-    PrintOddNumbers(ReadCounter());
+   cout <<  PrintOddNumbers(ReadCounter());
 }
