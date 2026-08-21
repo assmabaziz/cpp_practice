@@ -3,8 +3,39 @@
 
 using namespace std;
 
+short ReadPowerNum()
+{
+    short PowerNum;
+    cout << "Enter the power number: \n";
+    cin >> PowerNum;
+    return PowerNum;
+}
+
+short ReadBaseNum()
+{
+    short BaseNum;
+    cout << "Enter the power number: \n";
+    cin >> BaseNum;
+    return BaseNum;
+}
+
+int CalculatePower(short PowerNum, short BaseNum)
+{
+    int Result = 1;
+
+    for (short i = 0; i <= PowerNum; i++)
+    {
+        Result = Result * BaseNum;
+    }
+    return Result;
+}
+
 int main()
 {
+
+   cout << CalculatePower(ReadPowerNum(), ReadBaseNum());
+
+    /*
     short baseNumber ;
     short powerNumber ;
     unsigned int result ;
@@ -18,4 +49,5 @@ int main()
     cout << "The round of area equals to: " << round(result) ;
 
     return 0;
+    */
 }
